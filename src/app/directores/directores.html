@@ -1,0 +1,29 @@
+<div class="direc">
+    <img src="../../assets/Directors/AntonyRusso.jpg">
+    <img src="../../assets/Directors/JoeRusso.jpg">
+    <img src="../../assets/Directors/JossWhedon.jpg">
+</div>
+<div class="direc">
+    <img src="../../assets/Directors/PedroAlmodovar.jpg">
+
+
+    <img src="../../assets/Directors/QuentinTarantino.jpg">
+    <img src="../../assets/Directors/StevenSpilberg.jpg">
+</div>
+<div class="direc">
+
+    <img src="../../assets/Directors/WoodyAllen.jpg">
+    <img src="../../assets/Directors/ChristopherNolan.jpg">
+</div>
+<div id="searchbar">
+        <input [(ngModel)]="searchText" class="form-control" aria-describedby="emailHelp" placeholder="Cerca directors">
+  <ul><br>
+        <li *ngFor="let c of characters | filter : searchText">
+            {{c}}
+        </li>
+    </ul>
+</div> 
+
+
+
+ 

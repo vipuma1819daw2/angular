@@ -1,1 +1,289 @@
-/* You can add global styles to this file, and also import other style files */
+
+body,
+html {
+  padding: 0 10px;
+  margin: 0;
+  background: #0e0f11;
+  color: #ecf0f1;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+h2,
+p {
+  text-align: center;
+}
+p {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+a{
+    text-decoration: none;
+    font-size:18px;
+    line-height: 22px;
+    color:black;
+    cursor:pointer;
+    
+}
+a:hover{
+    color:#ff1755;
+}
+a,
+a:hover{
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+
+   transition: all .4s ease-in-out;
+
+}
+
+
+#menu{
+    word-spacing: 150px;
+    background-color: blue;
+   
+}
+nav,
+nav ul {
+    margin:0;
+    padding:0;
+    
+
+}
+
+nav ul li{
+    display: inline;
+    float: left;
+    margin: 0 0px 0 0;
+    
+}
+
+nav ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 20px;
+    
+}
+nav ul li a:hover {
+    background:white;
+    color:black;
+}
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+a:link{
+	color: white;
+	text-decoration: none;
+}
+
+nav li:first-child{
+
+
+
+margin-right:30%;
+margin-left:-20px;
+
+
+}
+
+
+#MainImg{				
+		
+ 	position: relative;
+	text-align: center;
+	width:102.7%;	
+	margin-left:-20px; 
+		
+}
+#MainImg:hover{			
+	opacity: 0.5;	
+	transition: 650ms opacity;
+	
+}
+footer{
+    background: #0e0f11;
+    color: white;
+    min-height:300px;
+    
+}
+footer p{
+    position: relative;
+    top:150px;
+    float:right;
+}
+
+.contain {
+  width: 100%;
+}
+
+
+.direc{
+    display: inline-block;
+    position: relative;
+    left:10%;
+    
+}
+
+.direc img{
+    margin:85px 85px 45px 5px;
+    
+}
+#searchbar{
+  position: absolute;
+  top:130px;
+  left:1100px;
+}
+
+h3{
+  width: 200px;
+  background:white;
+  margin: 100px auto;
+  text-align:center;
+  padding:20px;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row {
+   width: 50%;
+   position: relative;
+   left:80px;
+}
+.row__inner {
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70.3125px 0;
+  padding-bottom: 10px;
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 140.625px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+.tile__img {
+  width: 250px;
+  height: 140.625px;
+
+}
+.tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  transition: 450ms opacity;
+}
+.tile__details:after,
+.tile__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.tile__details:after {
+  margin-top: -28px;
+  margin-left: -24px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ecf0f1;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%; 
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.tile__details:before {
+  content: '▶';
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 7px;
+  margin-top: -18px;
+  text-align: center;
+  z-index: 2;
+}
+.tile:hover .tile__details {
+  opacity: 1;
+}
+.tile__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+/* .row__inner:hover {
+  -webkit-transform: translate3d(-62.5px, 0, 0);
+          transform: translate3d(-62.5px, 0, 0);
+} */
+.row__inner:hover .tile {
+  opacity: 0.3;
+}
+.row__inner:hover .tile:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 1;
+}
+.tile:hover ~ .tile {
+  -webkit-transform: translate3d(125px, 0, 0);
+          transform: translate3d(125px, 0, 0);
+}
+
