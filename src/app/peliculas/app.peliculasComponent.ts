@@ -27,7 +27,7 @@ export class PeliculasComponent{
     public Durada: Float32Array;
     public Director: String;
     public Genere: String;
-    public Image: ImageBitmap;
+    public Image: String;
   
     constructor(Nom,Durada,Director,Genere,Image){
       this.Nom=Nom;

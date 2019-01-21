@@ -23,13 +23,23 @@ export class DirectoresComponent{
     director[3].getNom(),
     director[4].getNom(),
     director[5].getNom(),
-    director[6].getNom()]}
+    director[6].getNom()]
+
+    characters1 = [
+      director[0].getImage(),
+      director[1].getImage(),
+      director[2].getImage(),
+      director[3].getImage(),
+      director[4].getImage(),
+      director[5].getImage(),
+      director[6].getImage()]}
+
  
    class Director {
     public Nom: String;
     public Cognom: String;
     public Edat: Int16Array;
-    public Image: ImageBitmap;
+    public Image: String;
   
     constructor(Nom,Cognom,Edat,Image){
       this.Nom=Nom;
