@@ -12,12 +12,14 @@
 </div>
 <div class="direc">
 
-    <img src="../../assets/Directors/WoodyAllen.jpg">
-    <img src="../../assets/Directors/ChristopherNolan.jpg">
+    <!-- <animacio> --><img [@agrandar]='state'(click)="animateMe()" src="../../assets/Directors/WoodyAllen.jpg"><!-- </animacio>  -->
+     <img src="../../assets/Directors/ChristopherNolan.jpg">
 </div>
 <div id="searchbar">
         <input [(ngModel)]="searchText" class="form-control" aria-describedby="emailHelp" placeholder="Cerca directors">
   <ul><br>
+  
+
         <li *ngFor="let c of characters | filter : searchText">
             {{c}}
         </li>
@@ -25,5 +27,3 @@
 </div> 
 
 
-
- 

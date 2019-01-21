@@ -12,6 +12,9 @@ import { ContentAreaComponent } from './contentArea/app.contentAreaComponent';
 import { FooterComponent } from './footer/app.footerComponent';
 import { DirectoresComponent } from './directores/app.directoresComponent';
 import { FilterPipe }from './directores/filter.pipe';
+import { PeliculasComponent } from './peliculas/app.peliculasComponent';
+
+
 
 
 
@@ -27,6 +30,7 @@ import { FilterPipe }from './directores/filter.pipe';
     FooterComponent,
     DirectoresComponent,
     FilterPipe,
+    PeliculasComponent
     
   ],
   imports: [
@@ -35,16 +39,24 @@ import { FilterPipe }from './directores/filter.pipe';
     BrowserAnimationsModule,
     RouterModule.forRoot([
       {
+        path: 'peliculas',
+        component: PeliculasComponent
+      },
+      {
         path: 'directores',
         component: DirectoresComponent
       },
+      
       {
         path: '',
         component: ContentAreaComponent
       }
-    ])
+    ]),
+    
+    
 
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
