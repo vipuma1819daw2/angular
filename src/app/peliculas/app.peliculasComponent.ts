@@ -11,6 +11,17 @@ import { Component } from '@angular/core';
 
 export class PeliculasComponent{
 
+  
+  characters = [
+    pelis[0].getNom(),
+    pelis[1].getNom(),
+    pelis[2].getNom(),
+    pelis[3].getNom(),
+    pelis[4].getNom(),
+    pelis[5].getNom()]}
+
+
+
    class Pelicula {
     public Nom: String;
     public Durada: Float32Array;
@@ -81,15 +92,4 @@ export class PeliculasComponent{
 
     }
 
-
-
-    
-
-
-  
-
-
  
-
-}
-

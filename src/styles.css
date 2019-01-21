@@ -130,8 +130,8 @@ footer p{
 
 
 .direc{
-    display: inline-block;
-    position: relative;
+/*     display: inline-block;
+ */    position: relative;
     left:10%;
     
 }
