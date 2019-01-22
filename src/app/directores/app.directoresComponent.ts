@@ -6,6 +6,7 @@ import {
   animate,
   transition  
 } from '@angular/animations';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -23,6 +24,29 @@ export class DirectoresComponent{
     'Beemo1',
     'Beemo2'
   ]  }
+
+
+
+  /* Obre els links dels directors */
+  var links =[];
+
+  links[0] = "https://www.imdb.com/name/nm0751577/";
+  links[1] = "https://www.imdb.com/name/nm0634240/";
+  links[2] = "https://www.imdb.com/name/nm0751648/";
+  links[3] = "https://www.imdb.com/name/nm0923736/";
+  links[4] = "https://www.imdb.com/name/nm0000264/";
+  links[5] = "https://www.imdb.com/name/nm0000233/";
+  links[6] = "https://www.imdb.com/name/nm0000229/";
+  links[7] = "https://www.imdb.com/name/nm0000095/";
+  
+
+
+  $(function (){
+    $("a").on("click", function(){
+      var codi = $(this).attr("id");
+      window.open(links[codi]);
+    });
+  });
 
   class Director {
     public Nom: String;
