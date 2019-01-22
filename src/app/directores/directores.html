@@ -1,20 +1,42 @@
-<div class="direc">
-    <img src="../../assets/Directors/AntonyRusso.jpg">
-    <img src="../../assets/Directors/JoeRusso.jpg">
-    <img src="../../assets/Directors/JossWhedon.jpg">
+<div class="container">
+    <div class="div-img">
+            <a href="https://www.imdb.com/name/nm0751577/"><img class="img" src="../../assets/Directors/AntonyRusso.jpg"></a>
+        <div class="text">Antony Russo</div>
+    </div>
+    <div class="div-img">
+            <a href="https://www.imdb.com/name/nm0634240/"><img class="img" src="../../assets/Directors/ChristopherNolan.jpg"></a>
+        <div class="text">Christopher Nolan</div>
+    </div>
+    <div class="div-img">
+        <a href="https://www.imdb.com/name/nm0751648/"><img class="img" src="../../assets/Directors/JoeRusso.jpg"></a>
+        <div class="text">Joe Russo</div>
+    </div>
+    <div class="div-img">
+            <a href="https://www.imdb.com/name/nm0923736/"> <img class="img" src="../../assets/Directors/JossWhedon.jpg"></a>
+        <div class="text">Joss Whedon</div>
+    </div><br>
+    <div class="div-img">
+            <a href="https://www.imdb.com/name/nm0000264/"> <img class="img" src="../../assets/Directors/PedroAlmodovar.jpg"></a>
+        <div class="text">Pedro Almodovar</div>
+    </div>
+    <div class="div-img">
+            <a href="https://www.imdb.com/name/nm0000233/"> <img class="img" src="../../assets/Directors/QuentinTarantino.jpg"></a>
+        <div class="text">Quentin Tarantino</div>
+    </div>
+    <div class="div-img">
+            <a href="https://www.imdb.com/name/nm0000229/"> <img class="img" src="../../assets/Directors/StevenSpilberg.jpg"></a>
+        <div class="text">Steven Spilberg</div>
+    </div>
+    <div class="div-img">
+       <a href="https://www.imdb.com/name/nm0000095/"><img class="img" src="../../assets/Directors/WoodyAllen.jpg"></a>
+        <div class="text">Woody Allen</div>
+    </div>
 </div>
-<div class="direc">
-    <img src="../../assets/Directors/PedroAlmodovar.jpg">
+<!--<div class="direc">
 
-
-    <img src="../../assets/Directors/QuentinTarantino.jpg">
-    <img src="../../assets/Directors/StevenSpilberg.jpg">
-</div>
-<div class="direc">
-
-    <!-- <animacio> --><img [@agrandar]='state'(click)="animateMe()" src="../../assets/Directors/WoodyAllen.jpg"><!-- </animacio>  -->
+    <animacio> <img [@agrandar]='state'(click)="animateMe()" src="../../assets/Directors/WoodyAllen.jpg"> </animacio>
      <img src="../../assets/Directors/ChristopherNolan.jpg">
-</div>
+</div>-->
 <div id="searchbar">
         <input [(ngModel)]="searchText" class="form-control" aria-describedby="emailHelp" placeholder="Cerca directors">
   <ul><br>
@@ -24,6 +46,4 @@
             {{c}}
         </li>
     </ul>
-</div> 
-
-
+</div>

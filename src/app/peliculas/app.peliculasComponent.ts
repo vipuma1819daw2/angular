@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   
 
 
-export class PeliculasComponent{
+export class PeliculasComponent{}
 
    class Pelicula {
     public Nom: String;
@@ -76,20 +76,4 @@ export class PeliculasComponent{
       console.log(pelis[i].getDurada());  
       console.log(pelis[i].getGenere()); 
       console.log(pelis[i].getImage());  
- 
-      
-
     }
-
-
-
-    
-
-
-  
-
-
- 
-
-}
-

@@ -22,7 +22,7 @@ export class DirectoresComponent{
     'Lumpy Space Princess',
     'Beemo1',
     'Beemo2'
-  ]    
+  ]  }
 
   class Director {
     public Nom: String;
@@ -84,5 +84,4 @@ export class DirectoresComponent{
       console.log(director[i].getEdat());  
       console.log(director[i].getImage()); 
     }
-}
-
+  
