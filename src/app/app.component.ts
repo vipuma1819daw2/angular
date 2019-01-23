@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavComponent } from './nav/app.navComponent';
 import { ContentAreaComponent } from './contentArea/app.contentAreaComponent';
 import { FooterComponent } from './footer/app.footerComponent';
 import { DirectoresComponent } from './directores/app.directoresComponent';
 import { PeliculasComponent } from './peliculas/app.peliculasComponent';
+
+
+
 
 
 
@@ -16,9 +19,7 @@ import { PeliculasComponent } from './peliculas/app.peliculasComponent';
 
 
 
+  export class AppComponent{
 
-export class AppComponent {
-
-  
-
-}
+   
+  }

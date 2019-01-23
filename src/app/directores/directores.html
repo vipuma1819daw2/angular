@@ -1,20 +1,19 @@
+<br><br><br><br>
+
 <div class="direc">
-    <img id="0" src="{{characters1[0]}}">
-    <img src="../../assets/Directors/JoeRusso.jpg">
-    <img src="../../assets/Directors/JossWhedon.jpg">
+    <img [@animacion2]='state' (click)="animateMe1()" src="../../assets/Directors/AntonyRusso.jpg">
+    <img [@animacion2]='state' (click)="animateMe2()" src="../../assets/Directors/JoeRusso.jpg">
+    <img [@animacion2]='state' (click)="animateMe1()"src="../../assets/Directors/JossWhedon.jpg">
 </div>
 <div class="direc">
-    <img src="../../assets/Directors/PedroAlmodovar.jpg">
-
-
-    <img src="../../assets/Directors/QuentinTarantino.jpg">
-    <img src="../../assets/Directors/StevenSpilberg.jpg">
-    
+    <img [@animacion2]='state' (click)="animateMe1()" src="../../assets/Directors/PedroAlmodovar.jpg">
+    <img [@animacion2]='state' (click)="animateMe1()" src="../../assets/Directors/QuentinTarantino.jpg">
+    <img [@animacion2]='state' (click)="animateMe1()" src="../../assets/Directors/StevenSpilberg.jpg">
 </div>
 <div class="direc">
 
-   <img src="../../assets/Directors/WoodyAllen.jpg">
-     <img src="../../assets/Directors/ChristopherNolan.jpg">
+     <img  [@animacion2]='state' (click)="animateMe1()" src="../../assets/Directors/WoodyAllen.jpg">
+     <img   [@animacion2]='state' (click)="animateMe1()"src="../../assets/Directors/ChristopherNolan.jpg">
 </div>
 <div id="searchbar">
         <input [(ngModel)]="searchText" class="form-control" aria-describedby="emailHelp" placeholder="Cerca directors">
@@ -22,13 +21,11 @@
   
 
         <li *ngFor="let c of characters | filter : searchText">
-            {{c}}
-        </li>
-
-        <li *ngFor="let c of characters1 | filter : searchText">
-            {{c}}
-        </li>
+            <p [@animacion]='state' (click)="animateMe()">{{c}} </p>        </li>
     </ul>
-</div> 
 
+    <br><br><br><br><br><br>
+    <p [@animacion3]='state' (click)="animateMe2()" style="font-size:50px;position:absolute;top:90%;left:10%;">Sergi</p>       
+
+</div> 
 

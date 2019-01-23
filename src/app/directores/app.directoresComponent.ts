@@ -1,20 +1,79 @@
 import { Component } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition  
-} from '@angular/animations';
+import { trigger,state,style,transition,animate,keyframes} from '@angular/animations'
 
 
-@Component({
-  //selector: '',
-  templateUrl: './directores.html',
-  })
 
+  @Component({
+     templateUrl: './directores.html',
+     animations: [
+         trigger('animacion',[
+             state('small', style({
+                 transform: 'scale(1)',
+             })),
+             state('large',style({
+                 transform:'scale(1.2)',
+                 color:"red"
+   
+             })),
+             
+             transition('small => large',animate('300ms ease-in')),
+   
+   
+         ]),
+         trigger('animacion2',[
+          state('large1', style({
+              transform: 'scale(1)',
+              opacity:1
+
+          })),
+          state('small1',style({
+              transform:'scale(0.9)',
+              opacity:0.5
+
+
+          })),
+          
+          transition('large1 => small1',animate('200ms ease-in')),
+        ]),
+        trigger('animacion3',[
+          state('large3', style({
+              transform: 'scale(1)',
+             
+              
+              opacity:1
+
+          })),
+          state('small3',style({
+              transform: 'rotateY(180deg) rotateZ(180deg)',
+              color: 'pink',
+              
+
+
+          })),
+          
+          transition('large3 => small3',animate('2000ms ease-in')),
+        ]),
+        
+     ]
+     })
 
 export class DirectoresComponent{
+
+  state: string = 'small'
+  state1: string = 'large1'
+  state2: string = 'large3'
+
+
+    
+    animateMe(){
+        this.state=(this.state === 'small' ? 'large' :'small');
+    }
+    animateMe1(){
+      this.state=(this.state === 'large1' ? 'small1' :'large1');
+  }
+  animateMe2(){
+    this.state=(this.state === 'large3' ? 'small3' :'large3');
+}
 
   characters = [
     director[0].getNom(),
@@ -24,15 +83,7 @@ export class DirectoresComponent{
     director[4].getNom(),
     director[5].getNom(),
     director[6].getNom()]
-
-    characters1 = [
-      director[0].getImage(),
-      director[1].getImage(),
-      director[2].getImage(),
-      director[3].getImage(),
-      director[4].getImage(),
-      director[5].getImage(),
-      director[6].getImage()]}
+}
 
  
    class Director {
@@ -68,10 +119,6 @@ export class DirectoresComponent{
     }  
     }  
 
-    /* var pelis = new Pelicula[
-          ('lol', 45, 'aa', 'aa')
-    ];
- */
     var direc1 = new Director("Anthony","Russo",49,"../../assets/Home/1.webp");
     var direc2 = new Director("Joe","Russo",47,"../../assets/Home/1.webp");
     var direc3 = new Director("Joss","Whedon",54,"../../assets/Home/1.webp");

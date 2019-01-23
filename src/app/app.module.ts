@@ -16,12 +16,6 @@ import { PeliculasComponent } from './peliculas/app.peliculasComponent';
 
 
 
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +24,8 @@ import { PeliculasComponent } from './peliculas/app.peliculasComponent';
     FooterComponent,
     DirectoresComponent,
     FilterPipe,
-    PeliculasComponent
+    PeliculasComponent,
+    
     
   ],
   imports: [
@@ -46,6 +41,10 @@ import { PeliculasComponent } from './peliculas/app.peliculasComponent';
         path: 'directores',
         component: DirectoresComponent
       },
+       /*  {
+        path: 'favoritos',
+        component:AnimacionesComponent
+      }, */  
       
       {
         path: '',
