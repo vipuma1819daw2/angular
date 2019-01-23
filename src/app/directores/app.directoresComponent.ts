@@ -138,6 +138,8 @@ export class DirectoresComponent{
    director[5] = direc6;
    director[6] = direc7;
 
+   /**comentari */
+
  
     var x=director.length;
     for(var i=0; i<x; i++){
