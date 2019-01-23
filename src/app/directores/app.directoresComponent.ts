@@ -119,6 +119,20 @@ export class DirectoresComponent{
     }  
     }  
 
+
+    characters = [
+      'Finn the human',
+      'Jake the dog',
+      'Princess bubblegum',
+      'Lumpy Space Princess',
+      'Beemo1',
+      'Beemo2'
+    ]  }
+  
+  
+  
+  
+
     var direc1 = new Director("Anthony","Russo",49,"../../assets/Home/1.webp");
     var direc2 = new Director("Joe","Russo",47,"../../assets/Home/1.webp");
     var direc3 = new Director("Joss","Whedon",54,"../../assets/Home/1.webp");
@@ -139,6 +153,7 @@ export class DirectoresComponent{
    director[6] = direc7;
 
    /**comentari */
+
 
  
     var x=director.length;
