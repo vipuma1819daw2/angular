@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { trigger,state,style,transition,animate,keyframes} from '@angular/animations'
+import { trigger,state,style,transition,animate,keyframes} from '@angular/animations';
 
 
 
@@ -117,7 +117,7 @@ export class DirectoresComponent{
       this.Nom = Nom;
   
     }  
-    }  
+    
 
 
     characters = [
@@ -127,7 +127,9 @@ export class DirectoresComponent{
       'Lumpy Space Princess',
       'Beemo1',
       'Beemo2'
-    ]  }
+    ]  
+
+  }
   
   
   

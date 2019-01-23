@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   //selector: '',
@@ -19,6 +20,26 @@ export class PeliculasComponent{
     pelis[3].getNom(),
     pelis[4].getNom(),
     pelis[5].getNom()]}
+
+
+    function obre(nom){
+
+      window.open("http://localhost:8888/peli?nom="+nom);
+      
+    }
+
+    /* JQuery videos */
+
+
+    $(function(){
+        $("div").on("click", function (){
+          var codi = $(this).attr("id");
+          
+         /*  window.open("http://localhost:8888/peli?nom="+codi); */
+        });
+
+         
+    });
 
 
 
